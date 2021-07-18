@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free Responsive Template #4 - Test Page</title>
+<!-- css3-mediaqueries.js for IE8 or older -->
+<!--[if lt IE 9]>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+<link href="css/styles.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+
+//顯示TR
+function show_td()
+{
+//alert("show");
+var result_style = document.getElementById('dyn_td').style;
+result_style.display = 'table';
+}
+
+ //隱藏TR
+function hide_td()
+{
+//alert("hide");
+var result_style = document.getElementById('dyn_td').style;
+result_style.display = 'none';
+}
+
+function chk()
+{
+  var tags = document.getElementsByTagName('input');
+  tags[4].checked = false;
+  return true;
+}
+
+function chk2()
+{
+  var tags = document.getElementsByTagName('input');
+  tags[2].checked = false;
+  tags[3].checked = false;
+  return true;
+}
+</script>
+</head>
+
+<body>
+
+  <header class="container">
+    <h1>Test Page</h1>
+    <nav>
+        <ul id="navlist">
+            <li id="active"><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+  </header>
+
+  <section class="container">
+
+      <div class="sidebar1">
+        <h1>Welcome</h1>
+        <table cellpadding="10" style="margin: auto; min-width: 100%; border-spacing: 0;">
+        <tbody><tr>
+        <td style="border: 1px solid #F44336; background-color:#DB4437;" width="1%" nowrap="">
+            <font size="4"><b><a href="groups.php?g=s" class="white">聊天八卦</a></b></font>
+        </td>
+        <td id="dyn_td" style="border: 1px solid #F44336; background-color:#DB56B7;" width="1%" nowrap="">
+            <font size="4"><b><a href="groups.php?g=s" class="white">天氣交通</a></b></font>
+        </td>
+        <td style="border: 1px solid #F44336; background-color:#FFC600;" width="1%" nowrap="">
+            <font size="4"><b><a href="groups.php?g=q" class="black">電影音樂</a></b></font>
+        </td>
+        <td style="border: 1px solid #F44336; background-color:#00B635;" width="1%" nowrap="">
+            <font size="4"><b><a href="groups.php?g=l" class="white">旅遊美食</a></b></font>
+        </td>
+        <td style="border: 1px solid #F44336; background-color:#404CFE;" width="1%" nowrap="">
+            <font size="4"><b><a href="groups.php?g=a" class="white">生活常識</a></b></font>
+        </td>
+        <td style="border: 1px solid #F44336; background-color:#009CE0;" width="1%" nowrap="">
+            <font size="4"><b><a href="groups.php?g=m" class="white">會心一笑</a></b></font>
+        </td>
+        <td style="border: 1px solid #F44336; background-color:#DB4437;" width="98%" nowrap="">
+            &nbsp;
+        </td>
+           </tr>
+        </tbody>
+ </table>
+ <input type="button" value="隱藏" onclick="hide_td()">
+ <input type="button" value="顯示" onclick="show_td()">
+        <p>
+          AAAAAAAAAAAAAAAAAAAAAAAA.<br><br>
+                      <strong>YBBBBBBBBBBBBBBBBBBBBBB:</strong>
+        </p>
+
+        <ul>
+        	<li>1111111111111111111111111111111111111</li>
+            <li>222222222222222222222222222222222222222</li>
+            <li>3333333333333333333333333333333333333333333333</li>
+        </ul>
+        <div class="picPreview"><img src="images/pic1.jpg" alt=""></div>
+      </div>
+
+      <div class="content">
+        <h1>About</h1>
+        <form action="index.html" method="post" name="form1">
+          <P><input type="checkbox" name="c1[]" value="A" onclick="return chk()">A</P>
+          <P><input type="checkbox" name="c1[]" value="B" onclick="return chk()">B</P>
+          <P><input type="checkbox" name="c1[]" value="C" onclick="return chk2()">C</P>
+        </form>
+        <p>
+        	  A,B可以複選但是跟C互斥<br><br>
+             XXXXXXXXXXXXXXXXXXXXXXXXXX
+
+OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+        </p>
+        <div class="picPreview"><img src="images/pic2.jpg" alt=""></div>
+      </div>
+
+  </section>
+
+  <footer class="container">
+    <p>版權聲明xxxxxOOOOOOOOOOOOOOOOOOOOO</p>
+  </footer>
+</body>
+</html>
